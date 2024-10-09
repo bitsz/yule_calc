@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<project name="javapackager">
+
+    <target name="default">
+        <fileset id="zip-files" dir="${project.build.directory}/${sub_dir}">
+            <include name="*.zip"/>
+        </fileset>
+        <foreach param="path" target="zip-copy" inheritall="true" inheritrefs="true">
+            <path>
+                <fileset refid="zip-files"/>
+            </path>
+        </foreach>
+    </target>
+    <target name="zip-copy">
+        <propertyregex property="filename" input="${path}" regexp="(.+?)(\.[^.]*$|$)" select="\1"/>
+        <propertyregex property="filename" input="${filename}" regexp="([^\\|\/]*)$" select="\1" casesensitive="false"
+                       override="true"/>
+        <copy file="${path}" tofile="${project.build.directory}/${filename}${file_suffix}.zip"/>
+    </target>
+
+</project>

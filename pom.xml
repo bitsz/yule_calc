@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.hrzj.yule.calc</groupId>
+    <artifactId>yule_calc</artifactId>
+    <version>1.3-SNAPSHOT</version>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.7.10</version>
+    </parent>
+
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <spring.profiles.active>dev</spring.profiles.active>
+                <maven.test.skip>true</maven.test.skip>
+                <scope.jar>compile</scope.jar>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+
+        <profile>
+            <id>uat</id>
+            <properties>
+                <spring.profiles.active>uat</spring.profiles.active>
+                <maven.test.skip>true</maven.test.skip>
+                <scope.jar>compile</scope.jar>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>prod</id>
+            <properties>
+                <spring.profiles.active>prod</spring.profiles.active>
+                <maven.test.skip>true</maven.test.skip>
+                <scope.jar>compile</scope.jar>
+            </properties>
+        </profile>
+    </profiles>
+
+
+    <properties>
+        <java.version>8</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <bootstrapfx-core.version>0.2.4</bootstrapfx-core.version>
+        <springboot-javafx-support.version>2.1.6</springboot-javafx-support.version>
+        <testfx.version>4.0.5-alpha</testfx.version>
+        <monocle.version>8u20-b26</monocle.version>
+        <feign.version>12.4</feign.version>
+
+    </properties>
+
+    <dependencies>
+
+        <!-- https://mvnrepository.com/artifact/de.roskenet/springboot-javafx-support -->
+        <dependency>
+            <groupId>de.roskenet</groupId>
+            <artifactId>springboot-javafx-support</artifactId>
+            <version>${springboot-javafx-support.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>net.sourceforge.jtds</groupId>
+            <artifactId>jtds</artifactId>
+            <version>1.3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.26</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.kordamp.bootstrapfx</groupId>
+            <artifactId>bootstrapfx-core</artifactId>
+            <version>${bootstrapfx-core.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.greenrobot</groupId>
+            <artifactId>eventbus</artifactId>
+            <version>3.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.6</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.54</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>core</artifactId>
+            <version>2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>javase</artifactId>
+            <version>2.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.testfx</groupId>
+            <artifactId>openjfx-monocle</artifactId>
+            <version>${monocle.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>net.java.dev.jna</groupId>
+            <artifactId>jna-platform</artifactId>
+            <version>5.14.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>net.java.dev.jna</groupId>
+            <artifactId>jna</artifactId>
+            <version>5.14.0</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>javax.usb</groupId>
+            <artifactId>usb-api</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.usb4java</groupId>
+            <artifactId>usb4java</artifactId>
+            <version>1.2.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.usb4java</groupId>
+            <artifactId>usb4java-javax</artifactId>
+            <version>1.3.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.7.17</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-core</artifactId>
+            <version>${feign.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-slf4j</artifactId>
+            <version>${feign.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-gson</artifactId>
+            <version>${feign.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-okhttp</artifactId>
+            <version>${feign.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.casic.javafx.control</groupId>
+            <artifactId>JavaFx-PaginationPicker</artifactId>
+            <version>0.0.2</version>
+            <!--<scope>system</scope>
+            <systemPath>${pom.basedir}/libs/JavaFx-PaginationPicker-0.0.2.jar</systemPath>-->
+        </dependency>
+
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.5.3.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>easyexcel</artifactId>
+            <version>3.3.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>8.0.32</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-cache</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.sf.ehcache</groupId>
+            <artifactId>ehcache</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>17.0.7</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.kordamp.ikonli</groupId>
+            <artifactId>ikonli-javafx</artifactId>
+            <version>12.3.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.17.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.17.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.codehaus.janino</groupId>
+            <artifactId>janino</artifactId>
+            <version>3.0.7</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>transmittable-thread-local</artifactId>
+            <version>2.14.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>net.sf.launch4j</groupId>
+            <artifactId>launch4j</artifactId>
+            <version>3.14</version>
+        </dependency>
+
+    </dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.1.6.RELEASE</version>
+            </plugin>
+
+            <!--https://github.com/fvarrui/JavaPackager-->
+            <plugin>
+                <groupId>io.github.fvarrui</groupId>
+                <artifactId>javapackager</artifactId>
+                <version>1.7.5</version>
+                <executions>
+                    <execution>
+                        <id>dist</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>package</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/dist</outputDirectory>
+                            <createZipball>true</createZipball>
+                            <platform>windows</platform>
+                            <generateInstaller>false</generateInstaller>
+                            <name>${project.artifactId}-${spring.profiles.active}</name>
+                            <organizationName>hrzj</organizationName>
+                            <version>${project.version}</version>
+                            <iconFile>src/main/resources/image/logo.ico</iconFile>
+                            <vmArgs>
+                                <vmArg>-XX:+UseParallelGC -Xms4g -Xmx4g -XX:InitiatingHeapOccupancyPercent=40</vmArg>
+                                <vmArg>-Dspring.profiles.active=${spring.profiles.active}</vmArg>
+                            </vmArgs>
+                            <!-- 不使用管理员身份打开程序 -->
+                            <administratorRequired>false</administratorRequired>
+                            <jreDirectoryName>env</jreDirectoryName>
+                            <jrePath>C:\app\Java\jdk1.8.0_202\jre</jrePath>
+                            <mainClass>com.hrzj.yule.calc.Application</mainClass>
+                            <additionalResources>
+                                <additionalResource>template</additionalResource>
+                                <additionalResource>report</additionalResource>
+                                <additionalResource>更新日志.txt</additionalResource>
+                            </additionalResources>
+                            <!--  添加精简jre缺少的模块  -->
+                            <additionalModules>
+                                <additionalModule>jdk.charsets</additionalModule>
+                            </additionalModules>
+                            <bundleJre>true</bundleJre>
+                            <winConfig>
+                                <icoFile>src/main/resources/image/logo.ico</icoFile>
+                                <headerType>gui</headerType>
+                            </winConfig>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <!--
+                    1. 加密后,方法体被清空,保留方法参数、注解等信息.主要兼容swagger文档注解扫描
+                    2. 方法体被清空后,反编译只能看到方法名和注解,看不到方法体的具体内容
+                    3. 加密后的项目需要设置javaagent来启动,启动过程中解密class,完全内存解密,不留下任何解密后的文件
+                    4. 启动加密后的jar,生成xxx-encrypted.jar,这个就是加密后的jar文件,加密后不可直接执行
+                    5. 无密码启动方式,java -javaagent:xxx-encrypted.jar -jar xxx-encrypted.jar
+                    6. 有密码启动方式,java -javaagent:xxx-encrypted.jar='-pwd= 密码' -jar xxx-encrypted.jar
+                    运行 C:\app\Java\jdk1.8.0_202\bin\java -javaagent:yule_calc-1.0-SNAPSHOT-encrypted.jar -jar yule_calc-1.0-SNAPSHOT-encrypted.jar
+                -->
+                <groupId>net.roseboy</groupId>
+                <artifactId>classfinal-maven-plugin</artifactId>
+                <version>1.2.1</version>
+                <configuration>
+                    <password>#</password><!-- #表示启动时不需要密码,事实上对于代码混淆来说,这个密码没什么用,它只是一个启动密码 -->
+                    <excludes>org.spring</excludes>
+                    <packages>com.hrzj.yule.calc</packages><!-- 加密的包名,多个包用逗号分开 -->
+                    <cfgfiles>application.yml</cfgfiles><!-- 加密的配置文件,多个包用逗号分开 -->
+                    <libjars/> <!-- jar包lib下面要加密的jar依赖文件,多个包用逗号分开 -->
+                    <code/>  <!--指定机器启动,机器码 -->
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>classFinal</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>3.1.0</version>
+                <executions>
+                    <execution>
+                        <id>dist</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <target>
+                                <taskdef resource="net/sf/antcontrib/antcontrib.properties"
+                                         classpathref="maven.plugin.classpath"/>
+                                <property name="sub_dir" value="dist"/>
+                                <property name="file_suffix" value="-dist"/>
+                                <ant antfile="${basedir}/build.xml">
+                                    <target name="default"/>
+                                </ant>
+                            </target>
+
+                        </configuration>
+                    </execution>
+                </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>ant-contrib</groupId>
+                        <artifactId>ant-contrib</artifactId>
+                        <version>1.0b3</version>
+                        <exclusions>
+                            <exclusion>
+                                <groupId>ant</groupId>
+                                <artifactId>ant</artifactId>
+                            </exclusion>
+                        </exclusions>
+                    </dependency>
+                </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>3.0.0</version>
+                <configuration>
+                    <releaseProfiles>release</releaseProfiles>
+                    <tagBase>${project.artifactId}-${project.version}</tagBase>
+                    <!-- tag分支的名称，project.version只包含版本，不包含SNAPSHOT后缀;scmBranch获取当前的 Git 分支信息 -->
+                    <tagNameFormat>v@{project.version}</tagNameFormat>
+                    <!-- 升级子模块 -->
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <!-- 是否生成release-pom.xml-->
+                    <generateReleasePoms>false</generateReleasePoms>
+                    <!-- 跳过单元测试 -->
+                    <arguments>-DskipTests</arguments>
+                    <arguments>-Dmaven.javadoc.skip=true</arguments>
+                    <!-- 执行目标是install还是deploy，install安装本地,deploy部署到nexus仓 -->
+                    <goals>-U install</goals>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <scm>
+        <connection>scm:git:http://192.168.1.248:9000/hrzj-backend/yule_calc.git</connection>
+        <developerConnection>scm:git:http://192.168.1.248:9000/hrzj-backend/yule_calc.git</developerConnection>
+        <!-- #git项目浏览器里的地址-->
+        <url>http://192.168.1.248:9000/hrzj-backend/yule_calc.git</url>
+        <tag>HEAD</tag>
+    </scm>
+
+</project>
