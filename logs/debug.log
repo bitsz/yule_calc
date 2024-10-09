@@ -1,0 +1,470 @@
+2024-08-02 10:25:08,319 [ForkJoinPool.commonPool-worker-25] INFO  [org.springframework.boot.SpringApplication] StartupInfoLogger.java:55 - Starting application using Java 1.8.0_202 on ROG-6PLUS with PID 35324 (started by szyfl in C:\projects\hrzj\yule_calc\yule_calc)
+2024-08-02 10:25:08,326 [ForkJoinPool.commonPool-worker-25] INFO  [org.springframework.boot.SpringApplication] SpringApplication.java:637 - The following 1 profile is active: "dev"
+2024-08-02 10:25:08,741 [ForkJoinPool.commonPool-worker-25] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:132 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-02 10:25:08,779 [ForkJoinPool.commonPool-worker-25] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:201 - Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interfaces.
+2024-08-02 10:25:08,781 [ForkJoinPool.commonPool-worker-25] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:132 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-02 10:25:08,806 [ForkJoinPool.commonPool-worker-25] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:201 - Finished Spring Data repository scanning in 24 ms. Found 8 JPA repository interfaces.
+2024-08-02 10:25:08,960 [ForkJoinPool.commonPool-worker-25] DEBUG [org.apache.ibatis.logging.LogFactory] LogFactory.java:109 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2024-08-02 10:25:08,962 [ForkJoinPool.commonPool-worker-25] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] ClassPathScanningCandidateComponentProvider.java:435 - Identified candidate component class: file [C:\projects\hrzj\yule_calc\yule_calc\target\classes\com\hrzj\yule\calc\mapper\mssql\CashProjectionMapper.class]
+2024-08-02 10:25:08,962 [ForkJoinPool.commonPool-worker-25] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] ClassPathScanningCandidateComponentProvider.java:435 - Identified candidate component class: file [C:\projects\hrzj\yule_calc\yule_calc\target\classes\com\hrzj\yule\calc\mapper\mssql\DbMapper.class]
+2024-08-02 10:25:08,963 [ForkJoinPool.commonPool-worker-25] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] ClassPathScanningCandidateComponentProvider.java:435 - Identified candidate component class: file [C:\projects\hrzj\yule_calc\yule_calc\target\classes\com\hrzj\yule\calc\mapper\mssql\EmployeeMapper.class]
+2024-08-02 10:25:08,963 [ForkJoinPool.commonPool-worker-25] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] ClassPathScanningCandidateComponentProvider.java:435 - Identified candidate component class: file [C:\projects\hrzj\yule_calc\yule_calc\target\classes\com\hrzj\yule\calc\mapper\mssql\FoodMapper.class]
+2024-08-02 10:25:08,963 [ForkJoinPool.commonPool-worker-25] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] ClassPathScanningCandidateComponentProvider.java:435 - Identified candidate component class: file [C:\projects\hrzj\yule_calc\yule_calc\target\classes\com\hrzj\yule\calc\mapper\mssql\ShopListDetailCashMapper.class]
+2024-08-02 10:25:08,964 [ForkJoinPool.commonPool-worker-25] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] Logger.java:49 - Creating MapperFactoryBean with name 'cashProjectionMapper' and 'com.hrzj.yule.calc.mapper.mssql.CashProjectionMapper' mapperInterface
+2024-08-02 10:25:08,965 [ForkJoinPool.commonPool-worker-25] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] Logger.java:49 - Creating MapperFactoryBean with name 'dbMapper' and 'com.hrzj.yule.calc.mapper.mssql.DbMapper' mapperInterface
+2024-08-02 10:25:08,965 [ForkJoinPool.commonPool-worker-25] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] Logger.java:49 - Creating MapperFactoryBean with name 'employeeMapper' and 'com.hrzj.yule.calc.mapper.mssql.EmployeeMapper' mapperInterface
+2024-08-02 10:25:08,965 [ForkJoinPool.commonPool-worker-25] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] Logger.java:49 - Creating MapperFactoryBean with name 'foodMapper' and 'com.hrzj.yule.calc.mapper.mssql.FoodMapper' mapperInterface
+2024-08-02 10:25:08,967 [ForkJoinPool.commonPool-worker-25] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] Logger.java:49 - Creating MapperFactoryBean with name 'shopListDetailCashMapper' and 'com.hrzj.yule.calc.mapper.mssql.ShopListDetailCashMapper' mapperInterface
+2024-08-02 10:25:08,969 [ForkJoinPool.commonPool-worker-25] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] ClassPathScanningCandidateComponentProvider.java:435 - Identified candidate component class: file [C:\projects\hrzj\yule_calc\yule_calc\target\classes\com\hrzj\yule\calc\mapper\mysql\CashItemMapper.class]
+2024-08-02 10:25:08,969 [ForkJoinPool.commonPool-worker-25] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] ClassPathScanningCandidateComponentProvider.java:435 - Identified candidate component class: file [C:\projects\hrzj\yule_calc\yule_calc\target\classes\com\hrzj\yule\calc\mapper\mysql\CashMapper.class]
+2024-08-02 10:25:08,969 [ForkJoinPool.commonPool-worker-25] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] ClassPathScanningCandidateComponentProvider.java:435 - Identified candidate component class: file [C:\projects\hrzj\yule_calc\yule_calc\target\classes\com\hrzj\yule\calc\mapper\mysql\FixCashMapper.class]
+2024-08-02 10:25:08,970 [ForkJoinPool.commonPool-worker-25] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] ClassPathScanningCandidateComponentProvider.java:435 - Identified candidate component class: file [C:\projects\hrzj\yule_calc\yule_calc\target\classes\com\hrzj\yule\calc\mapper\mysql\SalesEmployeeMapper.class]
+2024-08-02 10:25:08,970 [ForkJoinPool.commonPool-worker-25] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] Logger.java:49 - Creating MapperFactoryBean with name 'cashItemMapper' and 'com.hrzj.yule.calc.mapper.mysql.CashItemMapper' mapperInterface
+2024-08-02 10:25:08,970 [ForkJoinPool.commonPool-worker-25] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] Logger.java:49 - Creating MapperFactoryBean with name 'cashMapper' and 'com.hrzj.yule.calc.mapper.mysql.CashMapper' mapperInterface
+2024-08-02 10:25:08,971 [ForkJoinPool.commonPool-worker-25] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] Logger.java:49 - Creating MapperFactoryBean with name 'fixCashMapper' and 'com.hrzj.yule.calc.mapper.mysql.FixCashMapper' mapperInterface
+2024-08-02 10:25:08,972 [ForkJoinPool.commonPool-worker-25] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] Logger.java:49 - Creating MapperFactoryBean with name 'salesEmployeeMapper' and 'com.hrzj.yule.calc.mapper.mysql.SalesEmployeeMapper' mapperInterface
+2024-08-02 10:25:09,249 [ForkJoinPool.commonPool-worker-25] INFO  [c.h.y.calc.config.datasource.DataSourceConfigMsSQL] DataSourceConfigMsSQL.java:100 - 初始化mssql数据库连接完成
+2024-08-02 10:25:09,250 [ForkJoinPool.commonPool-worker-25] DEBUG [org.mybatis.spring.SqlSessionFactoryBean] Logger.java:49 - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2024-08-02 10:25:09,378 [ForkJoinPool.commonPool-worker-25] DEBUG [org.mybatis.spring.SqlSessionFactoryBean] Logger.java:49 - Parsed mapper file: 'file [C:\projects\hrzj\yule_calc\yule_calc\target\classes\mapper\mssql\EmployeeMapper.xml]'
+2024-08-02 10:25:09,383 [ForkJoinPool.commonPool-worker-25] DEBUG [org.mybatis.spring.SqlSessionFactoryBean] Logger.java:49 - Parsed mapper file: 'file [C:\projects\hrzj\yule_calc\yule_calc\target\classes\mapper\mssql\FoodMapper.xml]'
+2024-08-02 10:25:09,403 [ForkJoinPool.commonPool-worker-25] DEBUG [org.mybatis.spring.SqlSessionFactoryBean] Logger.java:49 - Parsed mapper file: 'file [C:\projects\hrzj\yule_calc\yule_calc\target\classes\mapper\mssql\SYGLMapper.xml]'
+2024-08-02 10:25:09,415 [ForkJoinPool.commonPool-worker-25] DEBUG [org.mybatis.spring.SqlSessionFactoryBean] Logger.java:49 - Parsed mapper file: 'file [C:\projects\hrzj\yule_calc\yule_calc\target\classes\mapper\mssql\ScanRecordsRepository.xml]'
+2024-08-02 10:25:09,421 [ForkJoinPool.commonPool-worker-25] DEBUG [org.mybatis.spring.SqlSessionFactoryBean] Logger.java:49 - Parsed mapper file: 'file [C:\projects\hrzj\yule_calc\yule_calc\target\classes\mapper\mssql\ShopListDetailCashProjectionMapper.xml]'
+2024-08-02 10:25:09,439 [ForkJoinPool.commonPool-worker-25] INFO  [c.h.y.calc.config.datasource.DataSourceConfigMySQL] DataSourceConfigMySQL.java:105 - 初始化mysql数据库连接完成
+2024-08-02 10:25:09,535 [ForkJoinPool.commonPool-worker-25] WARN  [c.b.mybatisplus.core.metadata.TableInfoHelper] TableInfoHelper.java:401 - This "cashId" is the table primary key by @TableId annotation in Class: "com.hrzj.yule.calc.pojo.entity.mysql.FixCash",So @TableField annotation will not work!
+2024-08-02 10:25:09,546 [ForkJoinPool.commonPool-worker-25] WARN  [c.b.mybatisplus.core.injector.AbstractMethod] AbstractMethod.java:405 - [com.hrzj.yule.calc.mapper.mysql.FixCashMapper.selectList] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectList]
+2024-08-02 10:25:11,053 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.fx.MainController] MainController.java:111 - 启动主页
+2024-08-02 10:25:11,150 [ForkJoinPool.commonPool-worker-25] INFO  [org.hibernate.jpa.internal.util.LogHelper] LogHelper.java:31 - HHH000204: Processing PersistenceUnitInfo [name: mysql]
+2024-08-02 10:25:11,194 [ForkJoinPool.commonPool-worker-25] INFO  [org.hibernate.Version] Version.java:44 - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-08-02 10:25:11,344 [ForkJoinPool.commonPool-worker-25] INFO  [org.hibernate.annotations.common.Version] JavaReflectionManager.java:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-08-02 10:25:11,547 [ForkJoinPool.commonPool-worker-25] INFO  [org.hibernate.dialect.Dialect] Dialect.java:175 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-08-02 10:25:12,167 [ForkJoinPool.commonPool-worker-25] INFO  [o.h.e.t.jta.platform.internal.JtaPlatformInitiator] JtaPlatformInitiator.java:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-02 10:25:12,178 [ForkJoinPool.commonPool-worker-25] INFO  [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean] AbstractEntityManagerFactoryBean.java:437 - Initialized JPA EntityManagerFactory for persistence unit 'mysql'
+2024-08-02 10:25:12,210 [ForkJoinPool.commonPool-worker-25] INFO  [org.hibernate.jpa.internal.util.LogHelper] LogHelper.java:31 - HHH000204: Processing PersistenceUnitInfo [name: mssql]
+2024-08-02 10:25:13,111 [ForkJoinPool.commonPool-worker-25] INFO  [org.hibernate.dialect.Dialect] Dialect.java:175 - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2008Dialect
+2024-08-02 10:25:14,245 [ForkJoinPool.commonPool-worker-25] INFO  [o.h.e.t.jta.platform.internal.JtaPlatformInitiator] JtaPlatformInitiator.java:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-02 10:25:14,246 [ForkJoinPool.commonPool-worker-25] INFO  [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean] AbstractEntityManagerFactoryBean.java:437 - Initialized JPA EntityManagerFactory for persistence unit 'mssql'
+2024-08-02 10:25:14,464 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.util.usb.USBEventListener] USBEventListener.java:83 - 设备: Bus 001 Device 003: ID 0b05:19b6
+2024-08-02 10:25:14,465 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.util.usb.USBEventListener] USBEventListener.java:83 - 设备: Bus 001 Device 008: ID 046d:c332
+2024-08-02 10:25:14,465 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.util.usb.USBEventListener] USBEventListener.java:83 - 设备: Bus 001 Device 002: ID 8087:0033
+2024-08-02 10:25:14,465 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.util.usb.USBEventListener] USBEventListener.java:83 - 设备: Bus 001 Device 010: ID 0951:1666
+2024-08-02 10:25:14,466 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.util.usb.USBEventListener] USBEventListener.java:103 - 日志文件已存在: usb_log.txt
+2024-08-02 10:25:14,466 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.util.usb.USBEventListener] USBEventListener.java:63 - 添加USB监听成功
+2024-08-02 10:25:15,060 [ForkJoinPool.commonPool-worker-25] INFO  [org.springframework.boot.SpringApplication] StartupInfoLogger.java:61 - Started application in 7.311 seconds (JVM running for 9.359)
+2024-08-02 10:25:15,062 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:USERDOMAIN_ROAMINGPROFILE=ROG-6PLUS
+2024-08-02 10:25:15,063 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:GRDLE_HOME=C:\app\gradle-6.8
+2024-08-02 10:25:15,063 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:NVM_SYMLINK=C:\app\nodejs
+2024-08-02 10:25:15,063 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:PROCESSOR_LEVEL=6
+2024-08-02 10:25:15,063 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:SESSIONNAME=Console
+2024-08-02 10:25:15,063 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:ALLUSERSPROFILE=C:\ProgramData
+2024-08-02 10:25:15,063 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:PROCESSOR_ARCHITECTURE=AMD64
+2024-08-02 10:25:15,063 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:GATEWAY_VM_OPTIONS=C:\Users\szyfl\Documents\JetBrains 2022 最新版本全家桶激活\方式2：激活到2099年补丁\ja-netfilter-all\vmoptions\gateway.vmoptions
+2024-08-02 10:25:15,063 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:ANDROID_HOME=C:\Users\szyfl\AppData\Local\Android\Sdk
+2024-08-02 10:25:15,063 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:PSModulePath=%ProgramFiles%\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+2024-08-02 10:25:15,063 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:SystemDrive=C:
+2024-08-02 10:25:15,063 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:ACSvcPort=17532
+2024-08-02 10:25:15,064 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:RIDER_VM_OPTIONS=C:\Users\szyfl\Documents\JetBrains 2022 最新版本全家桶激活\方式2：激活到2099年补丁\ja-netfilter-all\vmoptions\rider.vmoptions
+2024-08-02 10:25:15,064 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:USERNAME=szyfl
+2024-08-02 10:25:15,064 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:INCLUDE=C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.16.27023\include;
+2024-08-02 10:25:15,064 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:LOG_LEVEL=7
+2024-08-02 10:25:15,064 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:ProgramFiles(x86)=C:\Program Files (x86)
+2024-08-02 10:25:15,064 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:TOOLBOX_VERSION=2.4.1.32573
+2024-08-02 10:25:15,064 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:ACSetupSvcPort=23210
+2024-08-02 10:25:15,064 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+2024-08-02 10:25:15,064 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:APPCODE_VM_OPTIONS=C:\Users\szyfl\Documents\JetBrains 2022 最新版本全家桶激活\方式2：激活到2099年补丁\ja-netfilter-all\vmoptions\appcode.vmoptions
+2024-08-02 10:25:15,064 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:DriverData=C:\Windows\System32\Drivers\DriverData
+2024-08-02 10:25:15,064 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:GOPATH=C:\Users\szyfl\go
+2024-08-02 10:25:15,064 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:PyCharm Community Edition=C:\app\JetBrains\PyCharm Community Edition 2021.3.2\bin;
+2024-08-02 10:25:15,064 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:DATASPELL_VM_OPTIONS=C:\Users\szyfl\Documents\JetBrains 2022 最新版本全家桶激活\方式2：激活到2099年补丁\ja-netfilter-all\vmoptions\dataspell.vmoptions
+2024-08-02 10:25:15,064 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:ProgramData=C:\ProgramData
+2024-08-02 10:25:15,065 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:ProgramW6432=C:\Program Files
+2024-08-02 10:25:15,065 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:HOMEPATH=\Users\szyfl
+2024-08-02 10:25:15,065 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 154 Stepping 3, GenuineIntel
+2024-08-02 10:25:15,065 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:ProgramFiles=C:\Program Files
+2024-08-02 10:25:15,065 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:PUBLIC=C:\Users\Public
+2024-08-02 10:25:15,065 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:windir=C:\WINDOWS
+2024-08-02 10:25:15,065 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:DM_HOME=C:\dmdbms
+2024-08-02 10:25:15,065 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:ZES_ENABLE_SYSMAN=1
+2024-08-02 10:25:15,065 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:DATAGRIP_VM_OPTIONS=C:\Users\szyfl\Documents\JetBrains 2022 最新版本全家桶激活\方式2：激活到2099年补丁\ja-netfilter-all\vmoptions\datagrip.vmoptions
+2024-08-02 10:25:15,065 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:IGCCSVC_DB=AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4EICJOx49EK4/8wz0Ak73QQAAAACAAAAAAAQZgAAAAEAACAAAACjTwGrHnBxkDNrdw/rMEzMTHYpNcId8dihaZEsaJ7KogAAAAAOgAAAAAIAACAAAADCT6bbMHjXoqBYyHylb5w2sUVvcqt0LwL3ppvuiNCkZWAAAACmBvGFsESZx+XXvY7VNVJgrxxE2sPQ9oAWCiTDhQclBKL4GUZ2l4Wp9JxLyLOYZ64yMlLLbCB0ILhT3WYKqjxHWil5py4ZqqgmhwN8B0zn3jUeMcjRllPrcuEMkzIWd+RAAAAAVVhm0QOxOUiq8haAFNEW7m4lQJarvAlzQ1SjvsvC8e9X/lEMWILed11MZRPH6LmEZPrtrzFrJka8Hjp7WQhcEA==
+2024-08-02 10:25:15,065 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:LOCALAPPDATA=C:\Users\szyfl\AppData\Local
+2024-08-02 10:25:15,065 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:USERDOMAIN=ROG-6PLUS
+2024-08-02 10:25:15,065 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:LOGONSERVER=\\ROG-6PLUS
+2024-08-02 10:25:15,065 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:PYCHARM_VM_OPTIONS=C:\Users\szyfl\Documents\JetBrains 2022 最新版本全家桶激活\方式2：激活到2099年补丁\ja-netfilter-all\vmoptions\pycharm.vmoptions
+2024-08-02 10:25:15,065 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:WEBSTORM_VM_OPTIONS=C:\Users\szyfl\Documents\JetBrains 2022 最新版本全家桶激活\方式2：激活到2099年补丁\ja-netfilter-all\vmoptions\webstorm.vmoptions
+2024-08-02 10:25:15,066 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:JAVA_HOME=C:/app/Java/jdk1.8.0_202
+2024-08-02 10:25:15,066 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:CLION_VM_OPTIONS=C:\Users\szyfl\Documents\JetBrains 2022 最新版本全家桶激活\方式2：激活到2099年补丁\ja-netfilter-all\vmoptions\clion.vmoptions
+2024-08-02 10:25:15,066 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:JETBRAINSCLIENT_VM_OPTIONS=C:\Users\szyfl\Documents\JetBrains 2022 最新版本全家桶激活\方式2：激活到2099年补丁\ja-netfilter-all\vmoptions\jetbrainsclient.vmoptions
+2024-08-02 10:25:15,066 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:RlsSvcPort=22112
+2024-08-02 10:25:15,066 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:GOLAND_VM_OPTIONS=C:\Users\szyfl\Documents\JetBrains 2022 最新版本全家桶激活\方式2：激活到2099年补丁\ja-netfilter-all\vmoptions\goland.vmoptions
+2024-08-02 10:25:15,066 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:OneDrive=C:\Users\szyfl\OneDrive
+2024-08-02 10:25:15,066 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:APPDATA=C:\Users\szyfl\AppData\Roaming
+2024-08-02 10:25:15,066 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:GRADLE_USER_HOME=C:\app\gradle-6.8\repo
+2024-08-02 10:25:15,066 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:IDEA_VM_OPTIONS=C:\Users\szyfl\Documents\JetBrains 2022 最新版本全家桶激活\方式2：激活到2099年补丁\ja-netfilter-all\vmoptions\idea.vmoptions
+2024-08-02 10:25:15,066 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:RUBYMINE_VM_OPTIONS=C:\Users\szyfl\Documents\JetBrains 2022 最新版本全家桶激活\方式2：激活到2099年补丁\ja-netfilter-all\vmoptions\rubymine.vmoptions
+2024-08-02 10:25:15,066 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:JETBRAINS_CLIENT_VM_OPTIONS=C:\Users\szyfl\Documents\JetBrains 2022 最新版本全家桶激活\方式2：激活到2099年补丁\ja-netfilter-all\vmoptions\jetbrains_client.vmoptions
+2024-08-02 10:25:15,066 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:CommonProgramFiles=C:\Program Files\Common Files
+2024-08-02 10:25:15,066 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:Path=C:\app\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\app\apache-maven-3.8.5-bin\apache-maven-3.8.5\bin;C:\app\consul_1.12.1_windows_amd64;C:\app\gradle-6.8\bin;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.16.27023\bin\HostX64\x64;C:\app\docker-compose-windows-x86_64.exe;C:\Program Files\dotnet\;C:/app/Java/jdk1.8.0_202\bin;C:\app\Microsoft VS Code\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files (x86)\Yarn\bin\;C:\Users\szyfl\AppData\Roaming\nvm;C:\app\nodejs;C:\Users\szyfl\AppData\Local\Android\Sdk\tools;C:\Program Files (x86)\Inno Setup 5;C:\Program Files\OpenSSL-Win64\bin;C:\Program Files\Go\bin;C:\app\Git\cmd;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\szyfl\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\szyfl\AppData\Local\Programs\Python\Python311\;C:\Users\szyfl\AppData\Local\Microsoft\WindowsApps;C:\Users\szyfl\AppData\Roaming\npm;C:\app\JetBrains\PyCharm Community Edition 2021.3.2\bin;C:\Users\szyfl\AppData\Local\GitHubDesktop\bin;C:\app\Java\jdk1.8.0_202\bin;C:\Users\szyfl\AppData\Local\Yarn\bin;C:\Users\szyfl\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\szyfl\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Lens\resources\cli\bin;C:\Users\szyfl\go\bin;C:\Program Files (x86)\Tencent\QQGameTempest\Hall.58158\;C:\Users\szyfl\.dotnet\tools
+2024-08-02 10:25:15,066 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:LIB=C:\Program Files (x86)\Windows Kits\10\Lib\10.0.19041.0\um\x64;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.19041.0\ucrt\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.16.27023\lib\x64;
+2024-08-02 10:25:15,066 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:OS=Windows_NT
+2024-08-02 10:25:15,066 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:COMPUTERNAME=ROG-6PLUS
+2024-08-02 10:25:15,067 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:EnableLog=WARNING
+2024-08-02 10:25:15,067 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:NVM_HOME=C:\Users\szyfl\AppData\Roaming\nvm
+2024-08-02 10:25:15,067 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:PROCESSOR_REVISION=9a03
+2024-08-02 10:25:15,067 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:CommonProgramW6432=C:\Program Files\Common Files
+2024-08-02 10:25:15,067 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:ComSpec=C:\WINDOWS\system32\cmd.exe
+2024-08-02 10:25:15,067 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:SystemRoot=C:\WINDOWS
+2024-08-02 10:25:15,067 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:TEMP=C:\Users\szyfl\AppData\Local\Temp
+2024-08-02 10:25:15,067 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:WEBIDE_VM_OPTIONS=C:\Users\szyfl\Documents\JetBrains 2022 最新版本全家桶激活\方式2：激活到2099年补丁\ja-netfilter-all\vmoptions\webide.vmoptions
+2024-08-02 10:25:15,067 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:HOMEDRIVE=C:
+2024-08-02 10:25:15,067 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:USERPROFILE=C:\Users\szyfl
+2024-08-02 10:25:15,067 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:TMP=C:\Users\szyfl\AppData\Local\Temp
+2024-08-02 10:25:15,067 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+2024-08-02 10:25:15,067 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:NUMBER_OF_PROCESSORS=20
+2024-08-02 10:25:15,067 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:179 - 参数:PHPSTORM_VM_OPTIONS=C:\Users\szyfl\Documents\JetBrains 2022 最新版本全家桶激活\方式2：激活到2099年补丁\ja-netfilter-all\vmoptions\phpstorm.vmoptions
+2024-08-02 10:25:15,197 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.Application] Application.java:181 - AOF22MC014M系统启动完成.耗时7677
+2024-08-02 10:25:15,201 [JavaFX Application Thread] INFO  [com.hrzj.yule.calc.Application] Application.java:208 - 
+--------------------------------------------------------------------------------------------
+	启动完成:▼▼▼▼▼
+	启动参数: 	dev
+	--------------------------------------------------------------------------------------------
+2024-08-02 10:25:22,567 [JavaFX Application Thread] INFO  [com.hrzj.yule.calc.Application] Application.java:201 - 清理数据库
+2024-08-02 10:25:37,158 [ForkJoinPool.commonPool-worker-25] INFO  [org.springframework.boot.SpringApplication] StartupInfoLogger.java:55 - Starting application using Java 1.8.0_202 on ROG-6PLUS with PID 18436 (started by szyfl in C:\projects\hrzj\yule_calc\yule_calc)
+2024-08-02 10:25:37,161 [ForkJoinPool.commonPool-worker-25] INFO  [org.springframework.boot.SpringApplication] SpringApplication.java:637 - The following 1 profile is active: "prod"
+2024-08-02 10:25:37,583 [ForkJoinPool.commonPool-worker-25] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:132 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-02 10:25:37,669 [ForkJoinPool.commonPool-worker-25] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:201 - Finished Spring Data repository scanning in 77 ms. Found 1 JPA repository interfaces.
+2024-08-02 10:25:37,672 [ForkJoinPool.commonPool-worker-25] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:132 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-02 10:25:37,701 [ForkJoinPool.commonPool-worker-25] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:201 - Finished Spring Data repository scanning in 29 ms. Found 8 JPA repository interfaces.
+2024-08-02 10:25:38,103 [ForkJoinPool.commonPool-worker-25] INFO  [c.h.y.calc.config.datasource.DataSourceConfigMsSQL] DataSourceConfigMsSQL.java:100 - 初始化mssql数据库连接完成
+2024-08-02 10:25:38,297 [ForkJoinPool.commonPool-worker-25] INFO  [c.h.y.calc.config.datasource.DataSourceConfigMySQL] DataSourceConfigMySQL.java:105 - 初始化mysql数据库连接完成
+2024-08-02 10:25:38,399 [ForkJoinPool.commonPool-worker-25] WARN  [c.b.mybatisplus.core.metadata.TableInfoHelper] TableInfoHelper.java:401 - This "cashId" is the table primary key by @TableId annotation in Class: "com.hrzj.yule.calc.pojo.entity.mysql.FixCash",So @TableField annotation will not work!
+2024-08-02 10:25:38,409 [ForkJoinPool.commonPool-worker-25] WARN  [c.b.mybatisplus.core.injector.AbstractMethod] AbstractMethod.java:405 - [com.hrzj.yule.calc.mapper.mysql.FixCashMapper.selectList] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectList]
+2024-08-02 10:25:40,129 [ForkJoinPool.commonPool-worker-25] INFO  [com.hrzj.yule.calc.fx.MainController] MainController.java:111 - 启动主页
+2024-08-02 10:25:40,652 [ForkJoinPool.commonPool-worker-25] INFO  [org.hibernate.jpa.internal.util.LogHelper] LogHelper.java:31 - HHH000204: Processing PersistenceUnitInfo [name: mysql]
+2024-08-02 10:25:40,779 [ForkJoinPool.commonPool-worker-25] INFO  [org.hibernate.Version] Version.java:44 - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-08-02 10:25:41,223 [ForkJoinPool.commonPool-worker-25] INFO  [org.hibernate.annotations.common.Version] JavaReflectionManager.java:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-08-02 10:26:02,713 [ForkJoinPool.commonPool-worker-25] WARN  [o.h.e.jdbc.env.internal.JdbcEnvironmentInitiator] JdbcEnvironmentInitiator.java:133 - HHH000342: Could not obtain connection to query metadata
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:824)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:444)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:155)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:146)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:205)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:169)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:272)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:223)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:295)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:252)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:223)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at com.hrzj.yule.calc.config.datasource.DataSourceConfigMySQL.mysqlEntityManagerFactory(DataSourceConfigMySQL.java:124)
+	at com.hrzj.yule.calc.config.datasource.DataSourceConfigMySQL$$EnhancerBySpringCGLIB$$a5cc30e0.CGLIB$mysqlEntityManagerFactory$4(<generated>)
+	at com.hrzj.yule.calc.config.datasource.DataSourceConfigMySQL$$EnhancerBySpringCGLIB$$a5cc30e0$$FastClassBySpringCGLIB$$c14da61e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.hrzj.yule.calc.config.datasource.DataSourceConfigMySQL$$EnhancerBySpringCGLIB$$a5cc30e0.mysqlEntityManagerFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:693)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:374)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:134)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1707)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1452)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at de.felixroske.jfxsupport.AbstractJavaFxApplicationSupport.lambda$init$1(AbstractJavaFxApplicationSupport.java:124)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run$$$capture(CompletableFuture.java:1590)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1582)
+	at java.util.concurrent.ForkJoinTask.doExec$$$capture(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:944)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:814)
+	... 100 common frames omitted
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+	... 103 common frames omitted
+2024-08-02 10:26:02,751 [ForkJoinPool.commonPool-worker-25] INFO  [org.hibernate.dialect.Dialect] Dialect.java:175 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-08-02 10:26:26,923 [ForkJoinPool.commonPool-worker-25] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] SqlExceptionHelper.java:137 - SQL Error: 0, SQLState: 08S01
+2024-08-02 10:26:26,924 [ForkJoinPool.commonPool-worker-25] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] SqlExceptionHelper.java:142 - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2024-08-02 10:26:26,943 [ForkJoinPool.commonPool-worker-25] ERROR [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean] AbstractEntityManagerFactoryBean.java:426 - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: mysql] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+2024-08-02 10:26:26,945 [ForkJoinPool.commonPool-worker-25] ERROR [c.h.y.calc.config.datasource.DataSourceConfigMySQL] DataSourceConfigMySQL.java:126 - 数据库连接失败
+2024-08-02 10:26:26,958 [ForkJoinPool.commonPool-worker-25] WARN  [o.s.c.a.AnnotationConfigApplicationContext] AbstractApplicationContext.java:591 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'chargeReadCardController': Unsatisfied dependency expressed through field 'physicalCardRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'physicalCardRepository' defined in com.hrzj.yule.calc.repository.mysql.PhysicalCardRepository defined in @EnableJpaRepositories declared on DataSourceConfigMySQL: Cannot create inner bean '(inner bean)#6002114' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#6002114': Cannot resolve reference to bean 'mysqlEntityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mysqlEntityManagerFactory' defined in class path resource [com/hrzj/yule/calc/config/datasource/DataSourceConfigMySQL.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.persistence.EntityManagerFactory]: Factory method 'mysqlEntityManagerFactory' threw exception; nested exception is com.hrzj.yule.calc.config.exception.DatabaseConnectionException: mySql数据库服务未启动,应用无法继续启动。请检查数据库服务再重启。
+2024-08-02 10:26:27,031 [ForkJoinPool.commonPool-worker-25] INFO  [o.s.b.a.l.ConditionEvaluationReportLoggingListener] ConditionEvaluationReportLoggingListener.java:136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-08-02 10:26:27,156 [ForkJoinPool.commonPool-worker-25] ERROR [org.springframework.boot.SpringApplication] SpringApplication.java:821 - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'chargeReadCardController': Unsatisfied dependency expressed through field 'physicalCardRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'physicalCardRepository' defined in com.hrzj.yule.calc.repository.mysql.PhysicalCardRepository defined in @EnableJpaRepositories declared on DataSourceConfigMySQL: Cannot create inner bean '(inner bean)#6002114' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#6002114': Cannot resolve reference to bean 'mysqlEntityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mysqlEntityManagerFactory' defined in class path resource [com/hrzj/yule/calc/config/datasource/DataSourceConfigMySQL.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.persistence.EntityManagerFactory]: Factory method 'mysqlEntityManagerFactory' threw exception; nested exception is com.hrzj.yule.calc.config.exception.DatabaseConnectionException: mySql数据库服务未启动,应用无法继续启动。请检查数据库服务再重启。
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at de.felixroske.jfxsupport.AbstractJavaFxApplicationSupport.lambda$init$1(AbstractJavaFxApplicationSupport.java:124)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run$$$capture(CompletableFuture.java:1590)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1582)
+	at java.util.concurrent.ForkJoinTask.doExec$$$capture(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'physicalCardRepository' defined in com.hrzj.yule.calc.repository.mysql.PhysicalCardRepository defined in @EnableJpaRepositories declared on DataSourceConfigMySQL: Cannot create inner bean '(inner bean)#6002114' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#6002114': Cannot resolve reference to bean 'mysqlEntityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mysqlEntityManagerFactory' defined in class path resource [com/hrzj/yule/calc/config/datasource/DataSourceConfigMySQL.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.persistence.EntityManagerFactory]: Factory method 'mysqlEntityManagerFactory' threw exception; nested exception is com.hrzj.yule.calc.config.exception.DatabaseConnectionException: mySql数据库服务未启动,应用无法继续启动。请检查数据库服务再重启。
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:389)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:134)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1707)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1452)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 27 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#6002114': Cannot resolve reference to bean 'mysqlEntityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mysqlEntityManagerFactory' defined in class path resource [com/hrzj/yule/calc/config/datasource/DataSourceConfigMySQL.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.persistence.EntityManagerFactory]: Factory method 'mysqlEntityManagerFactory' threw exception; nested exception is com.hrzj.yule.calc.config.exception.DatabaseConnectionException: mySql数据库服务未启动,应用无法继续启动。请检查数据库服务再重启。
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:693)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:374)
+	... 40 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mysqlEntityManagerFactory' defined in class path resource [com/hrzj/yule/calc/config/datasource/DataSourceConfigMySQL.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.persistence.EntityManagerFactory]: Factory method 'mysqlEntityManagerFactory' threw exception; nested exception is com.hrzj.yule.calc.config.exception.DatabaseConnectionException: mySql数据库服务未启动,应用无法继续启动。请检查数据库服务再重启。
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 48 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.persistence.EntityManagerFactory]: Factory method 'mysqlEntityManagerFactory' threw exception; nested exception is com.hrzj.yule.calc.config.exception.DatabaseConnectionException: mySql数据库服务未启动,应用无法继续启动。请检查数据库服务再重启。
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 58 common frames omitted
+Caused by: com.hrzj.yule.calc.config.exception.DatabaseConnectionException: mySql数据库服务未启动,应用无法继续启动。请检查数据库服务再重启。
+	at com.hrzj.yule.calc.config.datasource.DataSourceConfigMySQL.mysqlEntityManagerFactory(DataSourceConfigMySQL.java:127)
+	at com.hrzj.yule.calc.config.datasource.DataSourceConfigMySQL$$EnhancerBySpringCGLIB$$a5cc30e0.CGLIB$mysqlEntityManagerFactory$4(<generated>)
+	at com.hrzj.yule.calc.config.datasource.DataSourceConfigMySQL$$EnhancerBySpringCGLIB$$a5cc30e0$$FastClassBySpringCGLIB$$c14da61e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.hrzj.yule.calc.config.datasource.DataSourceConfigMySQL$$EnhancerBySpringCGLIB$$a5cc30e0.mysqlEntityManagerFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 59 common frames omitted
+2024-08-02 10:26:27,163 [ForkJoinPool.commonPool-worker-25] ERROR [d.f.jfxsupport.AbstractJavaFxApplicationSupport] AbstractJavaFxApplicationSupport.java:127 - Failed to load spring application context: 
+java.util.concurrent.CompletionException: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'chargeReadCardController': Unsatisfied dependency expressed through field 'physicalCardRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'physicalCardRepository' defined in com.hrzj.yule.calc.repository.mysql.PhysicalCardRepository defined in @EnableJpaRepositories declared on DataSourceConfigMySQL: Cannot create inner bean '(inner bean)#6002114' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#6002114': Cannot resolve reference to bean 'mysqlEntityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mysqlEntityManagerFactory' defined in class path resource [com/hrzj/yule/calc/config/datasource/DataSourceConfigMySQL.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.persistence.EntityManagerFactory]: Factory method 'mysqlEntityManagerFactory' threw exception; nested exception is com.hrzj.yule.calc.config.exception.DatabaseConnectionException: mySql数据库服务未启动,应用无法继续启动。请检查数据库服务再重启。
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:273)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:280)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run$$$capture(CompletableFuture.java:1592)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1582)
+	at java.util.concurrent.ForkJoinTask.doExec$$$capture(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'chargeReadCardController': Unsatisfied dependency expressed through field 'physicalCardRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'physicalCardRepository' defined in com.hrzj.yule.calc.repository.mysql.PhysicalCardRepository defined in @EnableJpaRepositories declared on DataSourceConfigMySQL: Cannot create inner bean '(inner bean)#6002114' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#6002114': Cannot resolve reference to bean 'mysqlEntityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mysqlEntityManagerFactory' defined in class path resource [com/hrzj/yule/calc/config/datasource/DataSourceConfigMySQL.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.persistence.EntityManagerFactory]: Factory method 'mysqlEntityManagerFactory' threw exception; nested exception is com.hrzj.yule.calc.config.exception.DatabaseConnectionException: mySql数据库服务未启动,应用无法继续启动。请检查数据库服务再重启。
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at de.felixroske.jfxsupport.AbstractJavaFxApplicationSupport.lambda$init$1(AbstractJavaFxApplicationSupport.java:124)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run$$$capture(CompletableFuture.java:1590)
+	... 7 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'physicalCardRepository' defined in com.hrzj.yule.calc.repository.mysql.PhysicalCardRepository defined in @EnableJpaRepositories declared on DataSourceConfigMySQL: Cannot create inner bean '(inner bean)#6002114' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#6002114': Cannot resolve reference to bean 'mysqlEntityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mysqlEntityManagerFactory' defined in class path resource [com/hrzj/yule/calc/config/datasource/DataSourceConfigMySQL.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.persistence.EntityManagerFactory]: Factory method 'mysqlEntityManagerFactory' threw exception; nested exception is com.hrzj.yule.calc.config.exception.DatabaseConnectionException: mySql数据库服务未启动,应用无法继续启动。请检查数据库服务再重启。
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:389)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:134)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1707)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1452)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 27 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#6002114': Cannot resolve reference to bean 'mysqlEntityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mysqlEntityManagerFactory' defined in class path resource [com/hrzj/yule/calc/config/datasource/DataSourceConfigMySQL.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.persistence.EntityManagerFactory]: Factory method 'mysqlEntityManagerFactory' threw exception; nested exception is com.hrzj.yule.calc.config.exception.DatabaseConnectionException: mySql数据库服务未启动,应用无法继续启动。请检查数据库服务再重启。
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:693)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:374)
+	... 40 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mysqlEntityManagerFactory' defined in class path resource [com/hrzj/yule/calc/config/datasource/DataSourceConfigMySQL.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.persistence.EntityManagerFactory]: Factory method 'mysqlEntityManagerFactory' threw exception; nested exception is com.hrzj.yule.calc.config.exception.DatabaseConnectionException: mySql数据库服务未启动,应用无法继续启动。请检查数据库服务再重启。
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 48 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.persistence.EntityManagerFactory]: Factory method 'mysqlEntityManagerFactory' threw exception; nested exception is com.hrzj.yule.calc.config.exception.DatabaseConnectionException: mySql数据库服务未启动,应用无法继续启动。请检查数据库服务再重启。
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 58 common frames omitted
+Caused by: com.hrzj.yule.calc.config.exception.DatabaseConnectionException: mySql数据库服务未启动,应用无法继续启动。请检查数据库服务再重启。
+	at com.hrzj.yule.calc.config.datasource.DataSourceConfigMySQL.mysqlEntityManagerFactory(DataSourceConfigMySQL.java:127)
+	at com.hrzj.yule.calc.config.datasource.DataSourceConfigMySQL$$EnhancerBySpringCGLIB$$a5cc30e0.CGLIB$mysqlEntityManagerFactory$4(<generated>)
+	at com.hrzj.yule.calc.config.datasource.DataSourceConfigMySQL$$EnhancerBySpringCGLIB$$a5cc30e0$$FastClassBySpringCGLIB$$c14da61e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.hrzj.yule.calc.config.datasource.DataSourceConfigMySQL$$EnhancerBySpringCGLIB$$a5cc30e0.mysqlEntityManagerFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 59 common frames omitted

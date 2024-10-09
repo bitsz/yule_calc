@@ -1,0 +1,12 @@
+2024-06-18 08:57:58,043 [JavaFX Application Thread] DEBUG com.hrzj.yule.calc.mapper.mysql.CashMapper.selectPage_mpCount [137] - ==>  Preparing: SELECT COUNT(*) AS total FROM cash
+2024-06-18 08:57:58,053 [JavaFX Application Thread] DEBUG com.hrzj.yule.calc.mapper.mysql.CashMapper.selectPage_mpCount [137] - ==> Parameters: 
+2024-06-18 08:57:58,062 [JavaFX Application Thread] DEBUG com.hrzj.yule.calc.mapper.mysql.CashMapper.selectPage_mpCount [137] - <==      Total: 1
+2024-06-18 08:57:58,065 [JavaFX Application Thread] DEBUG com.hrzj.yule.calc.mapper.mysql.CashMapper.selectPage [137] - ==>  Preparing: SELECT id,crId,roomName,roomTypeId,roomTypeName,businessDay,esName,startTime,endTime,foodFee,outMinFoodFee,serviceFee,serviceFeeMoney,totalMoney,cTrueMoney,cPayMode,cCashComment,cRoomComment,empId,empName,time,fixMoneyCard,fixMoneyCash,tipMoney,handlingFee,noReward,rewardOther,rewardActive,commission,remark,vip FROM cash ORDER BY id ASC LIMIT ?
+2024-06-18 08:57:58,066 [JavaFX Application Thread] DEBUG com.hrzj.yule.calc.mapper.mysql.CashMapper.selectPage [137] - ==> Parameters: 50(Long)
+2024-06-18 08:57:58,078 [JavaFX Application Thread] DEBUG com.hrzj.yule.calc.mapper.mysql.CashMapper.selectPage [137] - <==      Total: 50
+2024-06-18 08:58:00,841 [JavaFX Application Thread] DEBUG com.hrzj.yule.calc.mapper.mysql.CashMapper.selectPage_mpCount [137] - ==>  Preparing: SELECT COUNT(*) AS total FROM cash
+2024-06-18 08:58:00,842 [JavaFX Application Thread] DEBUG com.hrzj.yule.calc.mapper.mysql.CashMapper.selectPage_mpCount [137] - ==> Parameters: 
+2024-06-18 08:58:00,844 [JavaFX Application Thread] DEBUG com.hrzj.yule.calc.mapper.mysql.CashMapper.selectPage_mpCount [137] - <==      Total: 1
+2024-06-18 08:58:00,845 [JavaFX Application Thread] DEBUG com.hrzj.yule.calc.mapper.mysql.CashMapper.selectPage [137] - ==>  Preparing: SELECT id,crId,roomName,roomTypeId,roomTypeName,businessDay,esName,startTime,endTime,foodFee,outMinFoodFee,serviceFee,serviceFeeMoney,totalMoney,cTrueMoney,cPayMode,cCashComment,cRoomComment,empId,empName,time,fixMoneyCard,fixMoneyCash,tipMoney,handlingFee,noReward,rewardOther,rewardActive,commission,remark,vip FROM cash ORDER BY id ASC LIMIT ?
+2024-06-18 08:58:00,845 [JavaFX Application Thread] DEBUG com.hrzj.yule.calc.mapper.mysql.CashMapper.selectPage [137] - ==> Parameters: 50(Long)
+2024-06-18 08:58:00,849 [JavaFX Application Thread] DEBUG com.hrzj.yule.calc.mapper.mysql.CashMapper.selectPage [137] - <==      Total: 50
