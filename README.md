@@ -21,3 +21,4 @@ javaFx做的一个收银业绩计算系统
 mvn -B release:clean release:prepare release:perform -DdryRun=false -DdevelopmentVersion='1.0.3' -DreleaseVersion='1.0.2' -DignoreSnapshots=true
 `
 
+![运行图片_2xx](https://github.com/user-attachments/assets/b3963adc-f2eb-4074-ac85-8794bf65e16f)
