@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hrzj.yule.calc.mapper.mysql.SalesEmployeeMapper">
+
+    <resultMap id="cash" type="com.hrzj.yule.calc.pojo.entity.mysql.CashEmployee">
+        <id column="id" property="id"/>
+        <result column="esName" property="empName"/>
+        <result column="empNo" property="empNo"/>
+        <result column="enable" property="empEnable"/>
+        <result column="empSex" property="empSex"/>
+        <result column="presentLevel" property="presentLevel"/>
+        <result column="esId" property="esId"/>
+        <result column="esName" property="esName"/>
+        <result column="isDj" property="isDj"/>
+        <result column="time" property="time"/>
+    </resultMap>
+
+    <insert id="saves">
+        insert into employee(id,empEnable,empName,empNo,empSex,esId,esName,isDj,presentLevel,`time`)
+        values
+        <foreach collection="employeeList" item="emp" separator=",">
+            (#{emp.id}, #{emp.empEnable}, #{emp.empName}, #{emp.empNo},
+            #{emp.empSex}, #{emp.esId}, #{emp.esName}, #{emp.isDj}, #{emp.presentLevel}, #{emp.time})
+        </foreach>
+
+    </insert>
+
+    <delete id="clear">
+        truncate table employee
+    </delete>
+
+    <select id="getDJ" resultType="com.hrzj.yule.calc.pojo.entity.mysql.CashEmployee">
+        select *
+        from employee
+        where isDj = 1
+    </select>
+
+
+</mapper>

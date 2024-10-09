@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hrzj.yule.calc.mapper.mssql.CashProjectionMapper">
+
+    <resultMap id="cashProjection" type="com.hrzj.yule.calc.pojo.entity.mssql.projection.CashProjection">
+        <id column="cID" property="cId"/>
+        <result column="rName" property="room"/>
+        <result column="c_rID" property="crId"/>
+        <result column="rtID" property="roomTypeId"/>
+        <result column="rtName" property="roomType"/>
+        <result column="cBusinessDay" property="businessDay"/>
+        <result column="esName" property="esName"/>
+        <result column="cStartTime" property="startTime"/>
+        <result column="cEndTime" property="endTime"/>
+        <result column="cFoodFee" property="foodFee"/>
+        <result column="cServiceFee" property="serviceFee"/>
+        <result column="cOutMinFoodFee" property="outMinFoodFee"/>
+        <result column="cServiceFeeMoney" property="serviceFeeMoney"/>
+        <result column="cTotalMoney" property="totalMoney"/>
+        <result column="cTrueMoney" property="trueMoney"/>
+        <result column="cPayMode" property="payMode"/>
+        <result column="cCashComment" property="cashComment"/>
+        <result column="cRoomComment" property="roomComment"/>
+        <result column="eID" property="eId"/>
+        <result column="eName" property="eName"/>
+    </resultMap>
+
+
+    <select id="findCash" resultMap="cashProjection">
+        SELECT cID,
+        c_rID,
+        ${db}.dbo.Room.rName,
+        rt.rtID,
+        rt.rtName,
+        cBusinessDay,
+        es.esName,
+        cStartTime,
+        cEndTime,
+        cFoodFee,
+        cOutMinFoodFee,
+        cServiceFee,
+        cServiceFeeMoney,
+        cTotalMoney,
+        cTrueMoney,
+        cPayMode,
+        cCashComment,
+        cRoomComment,
+        e.eID,
+        e.eName
+        FROM ${db}.dbo.Cash
+        LEFT JOIN ${db}.dbo.Room ON ${db}.dbo.Room.rID = ${db}.dbo.Cash.c_rID
+        LEFT JOIN ${db}.dbo.Employee e ON e.eID = ${db}.dbo.Cash.c_managerEID
+        LEFT JOIN ${db}.dbo.EmployeeStation es ON es.esID = e.e_esID
+        LEFT JOIN ${db}.dbo.RoomType rt on rt.rtID = ${db}.dbo.Room.r_rtID
+        <where>
+            <if test="sn!=null and ''!=sn">
+                ${db}.dbo.Cash.cID = #{sn}
+            </if>
+        </where>
+        order by ${db}.dbo.Cash.cEndTime asc;
+    </select>
+
+    <!--查询账单上是+的商品-->
+    <select id="cOutMinFoodFeeList" resultType="com.hrzj.yule.calc.pojo.entity.mysql.CashOutMinFood">
+        SELECT sld.sldID,
+               c.cId,
+               c.cOutMinFoodFee,
+               sl.slID,
+               sld.sld_fID,
+               f.fName,
+               sld.sldQuantity,
+               sld.sldMoney,
+               sld.sldInMinFee
+        FROM ${db}.dbo.cash c
+                 LEFT JOIN ${db}.dbo.shopList sl ON sl.sl_cID = c.cid
+                 LEFT JOIN ${db}.dbo.ShopListDetail sld ON sld.sld_slID = sl.slID
+                 LEFT JOIN ${db}.dbo.Food f ON f.fID = sld.sld_fID
+        WHERE sld.sldInMinFee = 0
+    </select>
+
+
+    <!--查询账单上是赠送的商品-->
+    <select id="cPresentFoodFeeList" resultType="com.hrzj.yule.calc.pojo.entity.mysql.CashPresentFood">
+        SELECT sld.sldID,
+               c.cId,
+               c.cOutMinFoodFee,
+               sl.slID,
+               sld.sld_fID,
+               f.fName,
+               sld.sldQuantity,
+               sld.sldMoney,
+               sld.sldInMinFee
+        FROM ${db}.dbo.cash c
+                 LEFT JOIN ${db}.dbo.shopList sl ON sl.sl_cID = c.cid
+                 LEFT JOIN ${db}.dbo.ShopListDetail sld ON sld.sld_slID = sl.slID
+                 LEFT JOIN ${db}.dbo.Food f ON f.fID = sld.sld_fID
+        WHERE sld.sldPresent =1
+    </select>
+
+</mapper>

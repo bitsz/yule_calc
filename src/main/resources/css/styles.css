@@ -1,0 +1,48 @@
+/* styles.css */
+.dialog-pane {
+    -fx-background-color: #f0f0f0;
+    -fx-padding: 20px;
+    -fx-font-family: 'Arial';
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+}
+
+.text-field, .password-field {
+    -fx-pref-width: 200px;
+    -fx-padding: 5px;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #45a049;
+}
+
+.grid-pane {
+    -fx-alignment: center;
+}
+
+.dialog-header {
+    -fx-font-size: 18px;
+    -fx-text-fill: #333;
+    -fx-padding-bottom: 10px;
+}
+
+.error-message {
+    -fx-text-fill: red;
+    -fx-font-size: 12px;
+    -fx-padding-top: 10px;
+}

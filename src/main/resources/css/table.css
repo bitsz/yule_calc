@@ -1,0 +1,26 @@
+.table-view .table-cell {
+    -fx-alignment: CENTER;
+    -fx-table-cell-border-color: #d3d3d3; /* 单元格边框颜色 */
+    -fx-table-cell-hover-color: #eeeeee; /* 鼠标悬停单元格背景色 */
+    -fx-text-fill: black;
+}
+
+/* 设置表头行高 设置表头字体大小 */
+.table-view .column-header {
+    -fx-pref-height: 50px; /* 调整为你想要的行高 */
+    -fx-font-size: 19px;
+    -fx-font-weight: bold;
+}
+
+
+.table-row-cell {
+    -fx-cell-size: 40px; /* 设置行高为50像素 */
+}
+
+.table-view:focused {
+    -fx-background-color: rgba(223, 17, 17, 0);
+}
+
+.date-picker > .text-field {
+    -fx-alignment: center;
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hrzj.yule.calc.mapper.mssql.ShopListDetailCashMapper">
+
+    <resultMap id="shopListDetailCashProjection"
+               type="com.hrzj.yule.calc.pojo.entity.mssql.projection.ShopListDetailCashProjection">
+        <id column="sldID" property="id"/>
+        <id column="slType" property="slType"/>
+        <result column="sl_cID" property="cashId"/>
+        <result column="fID" property="foodId"/>
+        <result column="fName" property="foodName"/>
+        <result column="ftID" property="ftId"/>
+        <result column="ftName" property="ftName"/>
+        <result column="smName" property="smName"/>
+        <result column="smID" property="smId"/>
+        <result column="sldQuantity" property="quantity"/>
+        <result column="sldMoney" property="money"/>
+        <result column="eID" property="empId"/>
+        <result column="eName" property="empName"/>
+        <result column="fPrice2" property="price"/>
+    </resultMap>
+
+
+    <select id="findCashItems" resultMap="shopListDetailCashProjection">
+        select shopListDetail.sldID,
+               ${db}.dbo.shopList.sl_cID,
+               ${db}.dbo.shopList.slType,
+               ${db}.dbo.shopListDetail.sld_slID,
+               ${db}.dbo.Food.fID,
+               ${db}.dbo.Food.f_ftID,
+               ${db}.dbo.Food.fName,
+               ${db}.dbo.Food.fPrice2,
+               ft.ftID,
+               ft.ftName,
+               sm.smID,
+               sm.smName,
+               sldQuantity,
+               sldMoney,
+               e.eID,
+               e.eName
+        from ${db}.dbo.shopListDetail
+                 left join ${db}.dbo.Food on ${db}.dbo.Food.fID = ${db}.dbo.shopListDetail.sld_fID
+                 LEFT JOIN ${db}.dbo.shopList ON ${db}.dbo.shopList.slID = ${db}.dbo.shopListDetail.sld_slID
+                 LEFT JOIN ${db}.dbo.foodType ft ON ft.ftID = ${db}.dbo.Food.f_ftID
+                 LEFT JOIN ${db}.dbo.ShopMode sm ON sm.smID = ft_smID
+                 LEFT JOIN ${db}.dbo.Cash c ON c.cID = ${db}.dbo.shopList.sl_cID
+                 LEFT JOIN ${db}.dbo.Employee e ON e.eID = c.c_managerEID
+    </select>
+
+</mapper>

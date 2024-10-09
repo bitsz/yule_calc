@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hrzj.yule.calc.mapper.mysql.CashMapper">
+
+    <resultMap id="cash" type="com.hrzj.yule.calc.pojo.entity.mysql.Cash">
+        <id column="id" property="id"/>
+        <result column="businessDay" property="businessDay"/>
+        <result column="cCashComment" property="cCashComment"/>
+        <result column="cPayMode" property="cPayMode"/>
+        <result column="cRoomComment" property="cRoomComment"/>
+        <result column="cTrueMoney" property="cTrueMoney"/>
+        <result column="crId" property="crId"/>
+        <result column="empId" property="empId"/>
+        <result column="empName" property="empName"/>
+        <result column="endTime" property="endTime"/>
+        <result column="esName" property="esName"/>
+        <result column="foodFee" property="foodFee"/>
+        <result column="outMinFoodFee" property="outMinFoodFee"/>
+        <result column="roomName" property="roomName"/>
+        <result column="roomTypeId" property="roomTypeId"/>
+        <result column="roomTypeName" property="roomTypeName"/>
+        <result column="serviceFeeMoney" property="serviceFeeMoney"/>
+        <result column="startTime" property="startTime"/>
+        <result column="totalMoney" property="totalMoney"/>
+        <result column="time" property="time"/>
+        <result column="noReward" property="noReward"/>
+        <result column="rewardOther" property="rewardOther"/>
+        <result column="rewardActive" property="rewardActive"/>
+        <result column="commission" property="commission"/>
+        <result column="fixMoney" property="fixMoney"/>
+        <result column="remark" property="remark"/>
+    </resultMap>
+
+    <select id="cashByEmpId" resultMap="cash">
+        select id,
+        businessDay,
+        cCashComment,
+        cPayMode,
+        cRoomComment,
+        cTrueMoney,
+        crId,
+        empId,
+        empName,
+        endTime,
+        esName,
+        foodFee,
+        outMinFoodFee,
+        roomName,
+        roomTypeId,
+        roomTypeName,
+        serviceFee,
+        serviceFeeMoney,
+        startTime,
+        totalMoney,
+        `time`,noReward,rewardOther,rewardActive,commission,remark
+        from cash
+        <where>
+            ifnull(fixMoneyCard,0) +ifnull(fixMoneyCash,0) is not null and ifnull(fixMoneyCard,0)
+            +ifnull(fixMoneyCash,0) &gt; 0
+            <if test="empId!=null">
+                and empId = #{empId}
+            </if>
+            <if test="cashId!=null">
+                and id = #{cashId}
+            </if>
+            <if test="businessDayStar!=null or businessDayEnd!=null">
+                and (businessDay between #{businessDayStar} and #{businessDayEnd})
+            </if>
+        </where>
+    </select>
+
+    <select id="cashByEmpGroup" resultMap="cash">
+        select id,
+        businessDay,
+        cCashComment,
+        cPayMode,
+        cRoomComment,
+        cTrueMoney,
+        crId,
+        empId,
+        empName,
+        endTime,
+        esName,
+        foodFee,
+        outMinFoodFee,
+        roomName,
+        roomTypeId,
+        roomTypeName,
+        serviceFee,
+        serviceFeeMoney,
+        startTime,
+        totalMoney,
+        `time`,noReward,rewardOther,rewardActive,commission,remark
+        from cash
+        <where>
+            ifnull(fixMoneyCard,0) +ifnull(fixMoneyCash,0) is not null and ifnull(fixMoneyCard,0)
+            +ifnull(fixMoneyCash,0) &gt; 0
+            <if test="empGroup!=null">
+                and ( empName like CONCAT( #{empGroup}, '%') OR empName = #{name} )
+            </if>
+            <if test="businessDayStar!=null or businessDayEnd!=null">
+                and (businessDay between #{businessDayStar} and #{businessDayEnd})
+            </if>
+
+        </where>
+    </select>
+
+
+    <update id="fixMoney">
+        update cash
+        set fixMoneyCard = #{fixMoneyCard},
+            fixMoneyCash = #{fixMoneyCash},
+            tipMoney     = #{tipMoney},
+            handlingFee  = #{handlingFee},
+            noReward     = #{noReward},
+            rewardOther  = #{rewardOther},
+            rewardActive = #{rewardActive},
+            commission   = #{commission},
+            remark       = #{remark},
+            vip          = #{vip}
+        where id = #{id}
+    </update>
+
+</mapper>

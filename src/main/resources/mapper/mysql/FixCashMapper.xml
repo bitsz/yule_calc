@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hrzj.yule.calc.mapper.mysql.FixCashMapper">
+
+
+    <select id="selectList" resultType="com.hrzj.yule.calc.pojo.entity.mysql.FixCash">
+        select cashId,
+               beerSale,
+               compensation,
+               discount,
+               ham,
+               importWine6000Sale,
+               importWineSale,
+               otherSale,
+               redWineSale,
+               snacksSale,
+               subjoinSale,
+               sumSale,
+               total,
+               businessDay
+        from fix_cash
+    </select>
+
+    <insert id="batchInsert">
+
+        insert into
+        fix_cash(cashId,beerSale,compensation,discount,ham,importWine6000Sale,importWineSale,otherSale,redWineSale,snacksSale,subjoinSale,sumSale,total,businessDay)
+        values
+        <foreach collection="list" item="item" separator=",">
+            (#{item.cashId}, #{item.beerSale}, #{item.compensation},
+            #{item.discount}, #{item.ham}, #{item.importWine6000Sale},
+            #{item.importWineSale}, #{item.otherSale}, #{item.redWineSale},
+            #{item.snacksSale}, #{item.subjoinSale},#{item.sumSale},
+            #{item.total},#{item.businessDay})
+        </foreach>
+    </insert>
+
+    <delete id="deleteFixCash">
+        delete from fix_cash where cashId in
+        <foreach collection="ids" item="id" separator="," open="(" close=")">
+            #{id}
+        </foreach>
+    </delete>
+</mapper>

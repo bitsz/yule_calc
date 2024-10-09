@@ -1,0 +1,64 @@
+spring:
+  profiles:
+    active: ${spring.profiles.active}
+  cache:
+    type: ehcache
+    ehcache:
+      config: classpath:ehcache.xml
+  datasource:
+    hikari:
+      connection-test-query: select 1
+      connection-timeout: 10000
+      maximum-pool-size: 10
+      minimum-idle: 1
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  thymeleaf:
+    cache: false
+  jmx:
+    enabled: false
+
+page:
+  size: 50
+
+royalty:
+  enable: false
+
+login:
+  enable: false
+  credentials:
+    - username: admin
+      password: 123456
+    - username: 186********
+      password: admin
+
+hrzj:
+  serviceTel: 186********
+  deviceName: 0001
+  deviceVersion: @project.version@
+
+
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.log4j2.Log4j2Impl
+  transaction-manager:
+    type: JDBC
+
+logging:
+  charset:
+    file: UTF-8
+    console: UTF-8
+  level:
+    com.hrzj.yule.calc.mapper: info
+    mybatis.mapper: info
+    org.mybatis: info
+    org.apache.ibatis: info
+  config: classpath:logback-spring.xml
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false # 关闭驼峰命名规则的自动转换

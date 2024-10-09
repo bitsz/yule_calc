@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hrzj.yule.calc.mapper.mssql.EmployeeMapper">
+
+    <resultMap id="employeeMap" type="com.hrzj.yule.calc.pojo.entity.mssql.Employee">
+        <id column="eID" property="id"/>
+        <result column="eName" property="eName"/>
+        <result column="eEnable" property="EEnable"/>
+        <association property="employeeStation" javaType="com.hrzj.yule.calc.pojo.entity.mssql.EmployeeStation">
+            <result column="esID" property="id"/>
+            <result column="esName" property="esName"/>
+        </association>
+    </resultMap>
+
+
+    <select id="findByEEnable" resultMap="employeeMap">
+        select *
+        from ${db}.dbo.Employee e
+                 left join ${db}.dbo.EmployeeStation es on e.e_esID = es.esID
+        where e.EEnable = #{enable}
+        order by es.esName
+    </select>
+
+</mapper>

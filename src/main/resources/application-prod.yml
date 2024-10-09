@@ -1,0 +1,19 @@
+mssql:
+  spring:
+    datasource:
+      url: jdbc:jtds:sqlserver://127.0.0.1:8829/master
+      driver-class-name: net.sourceforge.jtds.jdbc.Driver
+      username: sa
+      password: 123456
+      connectionUrl: jdbc:jtds:sqlserver://127.0.0.1:8829/master;user=sa;password=123456
+
+mysql:
+  spring:
+    datasource:
+      url: jdbc:mysql://192.168.5.102:30316/KTV?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: 123456
+
+exclusion:
+  disk: [ "C","D","E" ]

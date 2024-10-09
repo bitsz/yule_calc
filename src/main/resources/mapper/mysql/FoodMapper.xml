@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hrzj.yule.calc.mapper.mysql.CashItemMapper">
+
+    <resultMap id="cashItem" type="com.hrzj.yule.calc.pojo.entity.mysql.CashItem">
+        <id column="id" property="id"/>
+        <result column="cId" property="cId"/>
+        <result column="slType" property="slType"/>
+        <result column="bigType" property="bigType"/>
+        <result column="bigTypeName" property="bigTypeName"/>
+        <result column="empId" property="empId"/>
+        <result column="empName" property="empName"/>
+        <result column="foodId" property="foodId"/>
+        <result column="foodName" property="foodName"/>
+        <result column="foodTypeName" property="foodTypeName"/>
+        <result column="foodTypeId" property="foodTypeId"/>
+        <result column="money" property="money"/>
+        <result column="quantity" property="quantity"/>
+        <result column="time" property="time"/>
+        <result column="fPrice" property="fPrice"/>
+        <result column="fixMoney" property="fixMoney"/>
+        <result column="f_fuId" property="unitId"/>
+
+    </resultMap>
+
+    <select id="cashItemsByEmpId" resultMap="cashItem">
+        select id,
+        slType,
+        bigType,
+        bigTypeName,
+        cId,
+        empId,
+        empName,
+        foodId,
+        foodName,
+        foodTypeId,
+        foodTypeName,
+        money,
+        quantity,
+        cf.fPrice2 as fPrice,
+        `time`
+        from cash_item
+        left join cash_food cf on cash_item.foodId = cf.fID
+        <where>
+            <if test="empId!=null">
+                and empId = #{empId}
+            </if>
+            <if test="cashList!=null">
+                and cId in
+                <foreach collection="cashList" item="cash" open="(" close=")" separator=",">
+                    #{cash}
+                </foreach>
+            </if>
+        </where>
+    </select>
+
+    <select id="cashItemsByEmpGroup" resultMap="cashItem">
+        select cash_item.id,
+        slType,
+        bigType,
+        bigTypeName,
+        cId,
+        cash_item.empId,
+        c.empName,
+        foodId,
+        foodName,
+        foodTypeId,
+        foodTypeName,
+        money,
+        quantity,
+        cf.fPrice2 as fPrice,c.fixMoney,
+        cash_item.`time`,cf.f_fuId
+        from cash_item
+        left join cash_food cf on cash_item.foodId = cf.fID
+        left join cash c on c.id = cash_item.cId
+        <where>
+            c.fixMoney is not null and c.fixMoney &gt; 0
+            <if test="empGroup!=null">
+                and c.empName like CONCAT( #{empGroup}, '%')
+            </if>
+            <if test="cashList!=null">
+                and cash_item.cId in
+                <foreach collection="cashList" item="cash" open="(" close=")" separator=",">
+                    #{cash}
+                </foreach>
+            </if>
+        </where>
+    </select>
+
+
+    <select id="cashItemsByCid" resultMap="cashItem">
+        select id,
+        slType,
+        bigType,
+        bigTypeName,
+        cId,
+        empId,
+        empName,
+        foodId,
+        foodName,
+        foodTypeId,
+        foodTypeName,
+        money,
+        quantity,
+        cf.fPrice2 as fPrice,
+        f_fuId,
+        `time`
+        from cash_item
+        left join cash_food cf on cash_item.foodId = cf.fID
+        <where>
+            <if test="cId!=null">
+                and cId = #{cId} and slType!=1
+            </if>
+        </where>
+    </select>
+
+    <select id="cashItemsByCidAndBusinessDay"
+            resultType="com.hrzj.yule.calc.pojo.entity.mysql.projection.CashItemProjection">
+        select c.businessDay,c.id, ci.foodId,ci.bigTypeName,ci.foodTypeName, cf.fName,fu.fuName
+        ,ci.quantity,ci.money,ci.empName,
+        CASE
+        WHEN cpf.sldID IS NOT NULL THEN '是'
+        ELSE '否'
+        END AS present
+        from cash_item ci
+        left join cash c on c.id = ci.cId
+        left join cash_food cf on cf.fid = ci.foodId
+        left join food_unit fu on fu.id = cf.f_fuId
+        left join cash_present_food cpf on cpf.sldID = ci.id
+        <where>
+            <if test="cId!=null">
+                and c.id = #{cId}
+            </if>
+            <if test="businessDayStart!=null and businessDayEnd!=null">
+                and c.businessDay between #{businessDayStart} and #{businessDayEnd}
+            </if>
+        </where>
+        order by c.businessDay,c.id,ci.foodTypeName asc
+    </select>
+
+</mapper>
